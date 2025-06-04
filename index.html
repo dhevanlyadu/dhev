@@ -62,45 +62,41 @@
     <button type="button" class="btn btn-primary glow-button" data-bs-toggle="modal" data-bs-target="#cvModal2">
       Lamaran Kerja
     </button>
+      <div class="moving-text">
+  <span>Hai, saya <strong>Dhevanly Pascal Adu.</strong> Siswa kelas XI TJKT 2 di <strong>SMK Negeri 1 Kupang,</strong> Nusa Tenggara Timur. Saat ini saya mengikuti <strong>kelas industri bersama GameLab Indonesia</strong> sejak 2 Oktober 2024 di Salatiga, Jawa Tengah.</span>
+</div>
 
-    <!--tulisan bergerak-->
-     <style>
-    @keyframes marquee {
-      0%   { transform: translateX(50%); } /* Mulai dari tengah */
-      100% { transform: translateX(-100%); } /* Keluar ke kiri */
-    }
+<style>
+.moving-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 
-    .marquee-container {
-      overflow: hidden;
-      white-space: nowrap;
-      width: 500px;
-      border: 1 solid #ccc;
-      position: relative;
-      margin: 0 auto; /* Tengah halaman (opsional) */
-    }
+.moving-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 35s linear infinite;
+}
 
-    .marquee-text {
-      display: inline-block;
-      animation: marquee 50s linear infinite;
-    }
-  </style>
-</head>
-<body>
-  <br>
-  <div class="marquee-container">
-    <div class="marquee-text">
-    <h3>Hai, saya Dhevanly Pascal Adu. Saya siswa kelas XI TJKT 2 di SMK NEGERI 1 KUPANG, Kota Kupang, Nusa Tenggara Timur. Saya mengambil kompetensi keahlian <em>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</em>. Saat ini mengikuti kelas industri bersama GameLab Indonesia sejak 2 Oktober 2024 yang berlokasi di Salatiga, Jawa Tengah.</h3>
-    </div>
-  </div>
+@keyframes scroll-left {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 </style>
-<!--end tulisan bergerak-->
+
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
         d="M0,224L30,229.3C60,235,120,245,180,234.7C240,224,300,192,360,160C420,128,480,96,540,106.7C600,117,660,171,720,208C780,245,840,267,900,250.7C960,235,1020,181,1080,144C1140,107,1200,85,1260,90.7C1320,96,1380,128,1410,144L1440,160V320H0Z">
       </path>
     </svg>
   </section>
-
   <!-- About Section 1 -->
   <section id="about" class="py-5">
     <div class="container">
@@ -130,15 +126,15 @@
         </div>
       </div>
       <div class="row justify-content-center fs-5">
-        <div class="col-lg-6 mb-3">
-          <img src="Cuplikan layar 2025-04-15 213143.png" alt="Dhev" class="img-fluid rounded" />
-        </div>
-        <div class="col-lg-6 mb-3">
+       <div class="col-lg-6 mb-3">
           <div style="display: flex; align-items: center; gap: 10px;">
             <p>Saya dengan bangga bahwa saya, <strong>Dhevanly Pascal Adu</strong>, telah lulus dari program peningkatan kompetensi kelas <strong>"Sistem Operasi Linux"</strong> di GAMELAB Indonesia
             Dengan hasil nilai 93, saya dinyatakan LULUS dan mendapatkan sertifikat resmi dari GAMELAB yang berlaku hingga tahun 2028. Terima kasih kepada seluruh tim pengajar dan mentor di GAMELAB yang telah memberikan pembelajaran yang bermanfaat.</p>
         </div>
       </div>
+        <div class="col-lg-6 mb-3">
+          <img src="Cuplikan layar 2025-04-15 213143.png" alt="Dhev" class="img-fluid rounded" />
+        </div>
     </div>
   </section>
 
@@ -324,16 +320,16 @@
       </div>
     </div>
   </div>
-
-  <!-- Footer Wave with Text -->
+<!-- Footer Wave with Text -->
   <div style="overflow: hidden; line-height: 0;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
       <path fill="#8aeaff" fill-opacity="1" d="M0,160L1440,160V320H0Z"></path>
-      <text x="50%" y="200" text-anchor="middle" fill="#ffffff" font-size="30" font-family="Arial, sans-serif">© 2025 Dhevanly P. Adu</text>
+      <text x="50%" y="300" text-anchor="middle" fill="#ffffff" font-size="39" font-family="Arial, sans-serif">© 2025 Dhevanly P. Adu</text>
     </svg>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
+
+
